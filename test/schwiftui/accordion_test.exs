@@ -11,7 +11,11 @@ defmodule SchwiftUI.AccordionTest do
 
       html =
         rendered_to_string(~H"""
-          <.accordion></.accordion>
+          <.accordion>
+            <:collapse label="How do I create an account?" checked="checked">
+              Click the "Sign Up" button in the top right corner and follow the registration process.
+            </:collapse>
+          </.accordion>
         """)
 
       assert html =~ "How do I create an account?"
