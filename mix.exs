@@ -4,7 +4,7 @@ defmodule SchwiftUI.MixProject do
   def project do
     [
       app: :schwiftui,
-      version: "0.0.2",
+      version: "0.0.3",
       elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -24,14 +24,17 @@ defmodule SchwiftUI.MixProject do
   end
 
   defp description() do
-    "Declarative, stateless components for Phoenix LiveView."
+    "Opinionated, declarative UI library for Phoenix LiveView."
   end
 
   defp package() do
     [
       maintainers: "Brian Kim",
       licenses: ["MIT"],
-      links: %{"Website" => "https://anthrodontics.com"}
+      links: %{
+        "Website" => "https://anthrodontics.com",
+        "Github" => "https://github.com/anthrodontics/schwiftui"
+      }
     ]
   end
 

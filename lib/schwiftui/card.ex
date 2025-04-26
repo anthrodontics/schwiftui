@@ -1,4 +1,8 @@
 defmodule SchwiftUI.Card do
+  @moduledoc """
+  Cards are used to group and display content in a way that is easily readable.
+
+  """
   use SchwiftUI, :component
 
   def card(assigns) do
